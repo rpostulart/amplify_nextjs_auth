@@ -1,5 +1,9 @@
 import ConfigureAmplifyClientSide from "@/components/ConfigureAmplifyClientSide";
 import "./globals.css";
+import { Amplify } from "aws-amplify";
+import amplifyconfiguration from "@/amplifyconfiguration.json";
+
+Amplify.configure(amplifyconfiguration);
 
 import type { Metadata } from "next";
 
